@@ -1,0 +1,36 @@
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    padding: 30px 5px;
+    @include min-phone-l{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include min-tablet{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    >div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 130px;
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        &-inner{
+            position: relative;
+            >svg{
+                position: absolute;
+                z-index: 10;
+                left: 10px;
+                bottom: 10px;
+            }
+        }
+    }
+}

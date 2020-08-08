@@ -1,0 +1,52 @@
+.film {
+    padding: 15px;
+    box-sizing: border-box;
+    &__back{
+        margin-bottom: 30px;
+    }
+    &__inner {
+        display  : flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__info {
+        display  : flex;
+        flex-direction: column;
+        padding: 0 30px;
+
+        
+    }
+    &__props{
+        display: flex;
+        flex-wrap: wrap;
+        >span {
+            height: fit-content;
+            // width : 50%;
+            border: 1px solid rgb(26, 138, 250);
+            border-radius: 5px;
+            margin: 10px;
+            padding: 5px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    &__title {
+        width : 100%;
+        margin: 0;
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+
+    &__overview {
+        width: 100%;
+        >h2{
+            font-size: 20px;
+
+        }
+        >p{
+            font-size: 16px;
+        }
+    }
+}

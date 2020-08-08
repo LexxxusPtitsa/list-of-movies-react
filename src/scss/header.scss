@@ -1,0 +1,22 @@
+.header{
+    padding: 30px 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sort{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__title{
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px;
+    }
+}
+.filter{
+    >div{
+        margin: 0;
+    }
+}
